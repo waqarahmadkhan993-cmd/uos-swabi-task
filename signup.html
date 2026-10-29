@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | University of Swabi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+    <header class="top-header">
+        <div class="brand">
+            <div class="logo">UOS</div>
+            <div>
+                <h1>University of Swabi</h1>
+                <p>Student Registration Portal</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card signup-card">
+            <div class="auth-icon">📝</div>
+            <h2>Create Account</h2>
+            <p class="subtitle">Join the University Student Portal</p>
+
+            <form action="index.html" method="get">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname"
+                    placeholder="Enter your full name" required>
+
+                <label for="studentid">Student ID / Roll Number</label>
+                <input type="text" id="studentid" name="studentid"
+                    placeholder="Enter your roll number" required>
+
+                <label for="signup-email">Email Address</label>
+                <input type="email" id="signup-email" name="email"
+                    placeholder="Enter your email" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>English</option>
+                    <option>Management Sciences</option>
+                    <option>Mathematics</option>
+                </select>
+
+                <label for="new-password">Create Password</label>
+                <input type="password" id="new-password" name="password"
+                    placeholder="At least 6 characters"
+                    minlength="6" required>
+
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+
+            <p class="switch-text">
+                Already registered?
+                <a href="index.html">Login</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 University of Swabi | Student Portal Demo
+    </footer>
+
+</body>
+</html>
